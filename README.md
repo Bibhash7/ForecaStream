@@ -14,8 +14,7 @@ It is live on: https://pypi.org/project/TimeanddateScrapper/
 
 3. MongoDB Database: Store and manage the scraped weather data in a MongoDB database, offering scalability and flexibility for data storage needs.
 
-4. Easy Configuration: Customize data scraping frequency, Kafka settings, and MongoDB connection parameters through simple configuration options.
-Robust Error Handling: Implement error handling mechanisms to ensure smooth data extraction, transformation, and loading processes even in the presence of unexpected issues.
+4. Rest API Integration: Utilizes Flask to create a RESTful API for weather data retrieval.
 
 ## Output
 #### MongoDB:

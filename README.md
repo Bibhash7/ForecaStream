@@ -16,3 +16,10 @@ It is live on: https://pypi.org/project/TimeanddateScrapper/
 
 4. Easy Configuration: Customize data scraping frequency, Kafka settings, and MongoDB connection parameters through simple configuration options.
 Robust Error Handling: Implement error handling mechanisms to ensure smooth data extraction, transformation, and loading processes even in the presence of unexpected issues.
+
+## Output
+#### MongoDB:
+[![Scrap-1.png](https://i.postimg.cc/8PTyHqgW/Scrap-1.png)](https://postimg.cc/14YcR7t5)
+
+#### Response from MongoDB
+[![Scrap-2.png](https://i.postimg.cc/SxJf14TX/Scrap-2.png)](https://postimg.cc/xXVmqwSY)

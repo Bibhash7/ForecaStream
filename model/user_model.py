@@ -4,18 +4,19 @@ from TimeanddateScrapper.worldweather import Weather
 from json import dumps, loads
 from kafka import KafkaProducer, KafkaConsumer
 from pymongo import MongoClient
+from configDir.config import kafkaConf,mongoConf
 
 
 class Stream:
     def __init__(self):
-        self.client = MongoClient("mongodb://localhost:27017/")
+        self.client = MongoClient(mongoConf["Server"])
         self.mongotable = self.client.mydb.scrapstream
         self.topic_name = 'scrapstream'
-        self.producer = KafkaProducer(bootstrap_servers=['localhost:9092'],
+        self.producer = KafkaProducer(bootstrap_servers=[kafkaConf["Server"]],
                                       value_serializer=lambda x: dumps(x).encode('utf-8'))
         self.consumer = KafkaConsumer(
             self.topic_name,
-            bootstrap_servers=['localhost:9092'],
+            bootstrap_servers=[kafkaConf["Server"]],
             auto_offset_reset='earliest',
             enable_auto_commit=True,
             group_id='group',

@@ -1,6 +1,10 @@
 # ForecaStream
 ForecaStream is a powerful weather data pipeline application based on Flask-based REST API that leverages the TimeanddateScrapper Python package(Developed by me) to extract real-time weather information from timeanddate.com. This application employs Apache Kafka for efficient data streaming and MongoDB for robust data storage.
 
+## Project DFD
+
+[![Screenshot-2023-11-25-011313.png](https://i.postimg.cc/GmJPqXTJ/Screenshot-2023-11-25-011313.png)](https://postimg.cc/ZWnyqFcC)
+
 ## About the scrapper (Created by me):
 
 It is live on: https://pypi.org/project/TimeanddateScrapper/
